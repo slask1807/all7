@@ -1,23 +1,15 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Stack;
-
-/**
- * Ввести число, занести его цифры в	стек. Вывести в число, у которого цифры	идут в обратном порядке.
- */
 public class Main {
     public static void main(String[] args) {
+        try {
         Stack stack = new Stack();
         int n=0;
         System.out.println("Введите число ");
         Scanner sc1 = new Scanner(System.in);
-        try {
-            n = sc1.nextInt();
 
-        } catch (InputMismatchException fg)
-        {
-            System.out.print("Вы ввели не число." );
-        }
+            n = sc1.nextInt();
 
         char [] numbers = String.valueOf(n).toCharArray();
         for(char num : numbers){
@@ -28,6 +20,10 @@ public class Main {
             char stackNum;
             stackNum = (Character)stack.pop();
             System.out.print(stackNum);
+        }
+        } catch (InputMismatchException fg)
+        {
+            System.out.print("Вы ввели не число." );
         }
     }
 }
