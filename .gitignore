@@ -1,2 +1,2 @@
 # Project exclude paths
-/target/.class/.iml/target etc/output/, release/, debug/
+/target/.class/.iml/target etc/output/, release/, debug/.idea/
