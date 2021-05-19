@@ -1,8 +1,6 @@
 package javacleancode;
 
 import javacleancode.models.ClassificationLevel;
-//import javacleancode.models.ExperimentalTypes;
-//import javacleancode.planes.ExperimentalPlane;
 import javacleancode.planes.MilitaryPlane;
 import javacleancode.planes.PassengerPlane;
 import javacleancode.planes.Plane;
@@ -27,9 +25,7 @@ public class Runner {
             new MilitaryPlane("F-15", 1500, 12000, 10000, MilitaryType.FIGHTER),
             new MilitaryPlane("F-22", 1550, 13000, 11000, MilitaryType.FIGHTER),
             new MilitaryPlane("C-130 Hercules", 650, 5000, 110000, MilitaryType.TRANSPORT)
-//            ,new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalTypes.HIGH_ALTITUDE, ClassificationLevel.SECRET),
-//            new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
-       );
+    );
 
     public static void main(String[] args) {
         Airport airport = new Airport(planes);

@@ -21,15 +21,6 @@ public class PassengerPlane extends Plane {
                 ", passengersCapacity=" + passengersCapacity +
                         '}');
     }
-//
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof PassengerPlane)) return false;
-//        if (!super.equals(o)) return false;
-//        PassengerPlane plane = (PassengerPlane) o;
-//        return passengersCapacity == plane.passengersCapacity;
-//    }
 
     @Override
     public int hashCode() {
