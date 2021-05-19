@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class ChainFactory {
-    public static Chain createChain(){
+    public static Chain createChain() {
         Random random = new Random();
         return new Chain(
                 ChainType.values()[(new Random().nextInt(ChainType.values().length))],

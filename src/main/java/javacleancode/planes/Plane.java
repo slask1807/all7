@@ -4,9 +4,6 @@ import java.util.Objects;
 
 public abstract class Plane {
     String model;
-    private int maxSpeed;
-    private int maxFlightDistance;
-    private int maxLoadCapacity;
 
     public Plane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity) {
         this.model = model;
@@ -31,9 +28,13 @@ public abstract class Plane {
         int result = this.maxLoadCapacity;
         return result;
     }
-    //Display of characteristics
+
+    private int maxSpeed;
+    private int maxFlightDistance;
+    private int maxLoadCapacity;
+
     @Override
-    public String toString()   {
+    public String toString() {
         return "Plane{" +
                 "model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
@@ -41,7 +42,7 @@ public abstract class Plane {
                 ", maxLoadCapacity=" + maxLoadCapacity +
                 '}';
     }
-    //comparison of characteristics
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

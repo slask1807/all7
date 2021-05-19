@@ -10,32 +10,32 @@ public class HouseClass {
         Flat flat3 = new Flat();
 
         //Сконструируем однокомнатную кваритру
-        flat1.addRoom(1,4.25);
-        flat1.addRoom(2,2.25);
-        flat1.addRoom(3,2.25);
-        flat1.addRoom(4,2.25);
-        flat1.addRoom(5,3.25);
-        flat1.addRoom(6,15.25);
+        flat1.addRoom(1, 4.25);
+        flat1.addRoom(2, 2.25);
+        flat1.addRoom(3, 2.25);
+        flat1.addRoom(4, 2.25);
+        flat1.addRoom(5, 3.25);
+        flat1.addRoom(6, 15.25);
         //Сконструируем 2-ух комнатную кваритру
-        flat2.addRoom(1,4.25);
-        flat2.addRoom(2,4.25);
-        flat2.addRoom(3,4.25);
-        flat2.addRoom(4,4.25);
-        flat2.addRoom(5,4.25);
-        flat2.addRoom(6,15.25);
-        flat2.addRoom(7,15.25);
+        flat2.addRoom(1, 4.25);
+        flat2.addRoom(2, 4.25);
+        flat2.addRoom(3, 4.25);
+        flat2.addRoom(4, 4.25);
+        flat2.addRoom(5, 4.25);
+        flat2.addRoom(6, 15.25);
+        flat2.addRoom(7, 15.25);
         //Сконструируем 3-ех комнатную кваритру
-        flat3.addRoom(1,4.25);
-        flat3.addRoom(2,4.25);
-        flat3.addRoom(3,4.25);
-        flat3.addRoom(4,4.25);
-        flat3.addRoom(5,4.25);
-        flat3.addRoom(6,16.25);
+        flat3.addRoom(1, 4.25);
+        flat3.addRoom(2, 4.25);
+        flat3.addRoom(3, 4.25);
+        flat3.addRoom(4, 4.25);
+        flat3.addRoom(5, 4.25);
+        flat3.addRoom(6, 16.25);
         flat3.addRoom(7, 15.25);
         flat3.addRoom(7, 15.25);
 
 
-        House house = new House("Сокола 5","Кирпичный",50);
+        House house = new House("Сокола 5", "Кирпичный", 50);
         house.setMaxFlatOnFloor(3); // максимальное кол-во квартир на этаже
         //Сформируем дом
         house.addFlat(flat1);
@@ -56,7 +56,7 @@ public class HouseClass {
         house.getFlatFiltr(3);
 
         //найти квартиры с заданым числом комнат на этаже
-        house.getFlatFiltr(2,2);
+        house.getFlatFiltr(2, 2);
         //поиск по размеру
         house.getSizeFiltr(51);
         //Поная информация по квартире поиск по номеру

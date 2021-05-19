@@ -18,7 +18,7 @@ class Room {
     }
 
     private String getStringType(int typeR) {
-        switch(typeR) {
+        switch (typeR) {
             case 1:
                 return "коридор";
             case 2:

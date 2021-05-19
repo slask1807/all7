@@ -15,9 +15,9 @@ import java.util.Random;
  * Created by Rashid on 18.08.2015.
  */
 public class StoneFactory {
-    public static Stone createStone(){
+    public static Stone createStone() {
         Random random = new Random();
-        switch (random.nextInt(2)){
+        switch (random.nextInt(2)) {
             case 0:
                 return new PreciousStone(
                         random.nextDouble() * 10 + 0.1,

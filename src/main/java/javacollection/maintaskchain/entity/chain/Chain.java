@@ -2,13 +2,14 @@ package javacollection.maintaskchain.entity.chain;
 
 import javacollection.maintaskchain.enums.ChainType;
 import javacollection.maintaskchain.enums.Fineness;
+
 public class Chain {
 
     private ChainType material;
     private double cost;
     private Fineness fineness;
 
-    public Chain(){
+    public Chain() {
 
     }
 
@@ -47,7 +48,7 @@ public class Chain {
     public String toString() {
         return "Chain{" +
                 "material = " + this.getMaterial() +
-                ", cost = " +  String.format("%8.3f",this.getCost()) +
+                ", cost = " + String.format("%8.3f", this.getCost()) +
                 ", fineness = " + this.getFineness() +
                 '}';
     }

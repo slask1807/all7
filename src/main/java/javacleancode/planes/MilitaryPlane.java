@@ -6,8 +6,6 @@ import java.util.Objects;
 
 public class MilitaryPlane extends Plane{
 
-    private MilitaryType type;
-
     public MilitaryPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, MilitaryType type) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.type = type;
@@ -16,6 +14,8 @@ public class MilitaryPlane extends Plane{
     public MilitaryType getType() {
         return type;
     }
+
+    private MilitaryType type;
 
     @Override
     public String toString() {

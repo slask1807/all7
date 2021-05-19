@@ -11,9 +11,9 @@ import java.util.List;
 
 public class Manager {
 
-    public Necklace createNecklace(Necklace necklace, int countStone){
+    public Necklace createNecklace(Necklace necklace, int countStone) {
         List<Stone> stones = new ArrayList<Stone>();
-        for (int i = 0; i < countStone; i++){
+        for (int i = 0; i < countStone; i++) {
             stones.add(StoneFactory.createStone());
         }
         necklace.setStonesList(stones);
@@ -29,9 +29,9 @@ public class Manager {
         return totalCaratWeight;
     }
 
-    public int calculateTotalStonesCost(List<Stone> stones){
+    public int calculateTotalStonesCost(List<Stone> stones) {
         int totalCost = 0;
-        for (Stone stone : stones){
+        for (Stone stone : stones) {
             totalCost += stone.getPrice() * stone.getWeight();
         }
 

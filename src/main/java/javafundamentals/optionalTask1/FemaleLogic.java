@@ -19,23 +19,24 @@ class FemaleLogic {
         System.out.println("Самое короткое число: '" + shortWord + "'");
         System.out.println("Длина: " + shortWord.length());
         System.out.println("Введите еще раз эти же числа через Enter");
-        for(int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             arr[i] = in.nextLine();
         }
-        for(int i = arr.length-1 ; i > 0 ; i--){
-            for(int j = 0 ; j < i ; j++){
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
             /*Сравниваем элементы попарно,
              если они имеют неправильный порядок,
              то меняем местами */
-                if( arr[j].length() > arr[j+1].length() ){
+                if (arr[j].length() > arr[j + 1].length()) {
                     String tmp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = tmp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
                 }
             }
         }
 //выводим результат на экран:
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.println("сортировка: " + arr[i]);
         }
-    }}
+    }
+}

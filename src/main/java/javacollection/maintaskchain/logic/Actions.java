@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Actions {
-    public static void stonesSortByPrice(List<Stone> stones){
+    public static void stonesSortByPrice(List<Stone> stones) {
         Collections.sort(stones, new Comparator<Stone>() {
             public int compare(Stone o1, Stone o2) {
                 return Double.compare(o1.getPrice(), o2.getPrice());
@@ -17,7 +17,7 @@ public class Actions {
         });
     }
 
-    public static void stonesSortByWeight(List<Stone> stones){
+    public static void stonesSortByWeight(List<Stone> stones) {
         Collections.sort(stones, new Comparator<Stone>() {
             public int compare(Stone o1, Stone o2) {
                 return Double.compare(o1.getWeight(), o2.getWeight());
@@ -25,10 +25,10 @@ public class Actions {
         });
     }
 
-    public static List<Stone> findStoneByColor(String color, List<Stone> stones){
+    public static List<Stone> findStoneByColor(String color, List<Stone> stones) {
         List<Stone> foundStones = new ArrayList();
-        for (Stone stone : stones){
-            if ((Color.valueOf(color)).equals(stone.getColor())){
+        for (Stone stone : stones) {
+            if ((Color.valueOf(color)).equals(stone.getColor())) {
                 foundStones.add(stone);
             }
         }
