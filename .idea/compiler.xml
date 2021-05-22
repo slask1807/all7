@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="16">
-      <module name="all3" target="1.8" />
+      <module name="all3" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

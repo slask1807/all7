@@ -10,19 +10,11 @@ import java.util.List;
 
 public class Actions {
     public static void stonesSortByPrice(List<Stone> stones) {
-        Collections.sort(stones, new Comparator<Stone>() {
-            public int compare(Stone o1, Stone o2) {
-                return Double.compare(o1.getPrice(), o2.getPrice());
-            }
-        });
+        stones.sort(Comparator.comparingDouble(Stone::getPrice));
     }
 
     public static void stonesSortByWeight(List<Stone> stones) {
-        Collections.sort(stones, new Comparator<Stone>() {
-            public int compare(Stone o1, Stone o2) {
-                return Double.compare(o1.getWeight(), o2.getWeight());
-            }
-        });
+        stones.sort(Comparator.comparingDouble(Stone::getWeight));
     }
 
     public static List<Stone> findStoneByColor(String color, List<Stone> stones) {
