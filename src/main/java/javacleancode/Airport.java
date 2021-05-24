@@ -67,17 +67,6 @@ public class Airport {
         return bomberMilitaryPlanes;
     }
 
-//    public List<ExperimentalPlane> getExperimentalPlanes() {
-//        List<ExperimentalPlane> ExperimentalPlanes = new ArrayList<>();
-//        for (Plane plane : planes) {
-//            if (plane instanceof ExperimentalPlane) {
-//                ExperimentalPlanes.add((ExperimentalPlane) plane);
-//            }else {
-//            }
-//        }
-//        return ExperimentalPlanes;
-// }
-
     public Airport sortByMaxDistance() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane o1, Plane o2) {
